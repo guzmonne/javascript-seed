@@ -1,0 +1,35 @@
+{
+  "name": "javascript-seed",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "stats": "webpack --profile --json > stats.json",
+    "deploy:gh": "npm-run-all build:gh gh-pages",
+    "build": "webpack",
+    "build:gh": "webpack",
+    "gh-pages": "gh-pages -d gh",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "clean-webpack-plugin": "^0.1.10",
+    "css-loader": "^0.25.0",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "gh-pages": "^0.11.0",
+    "html-webpack-plugin": "^2.22.0",
+    "npm-run-all": "^3.1.0",
+    "purifycss-webpack-plugin": "^2.0.3",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.15.1",
+    "webpack-merge": "^0.14.1",
+    "webpack-validator": "^2.2.7"
+  },
+  "dependencies": {
+    "purecss": "^0.6.0",
+    "react": "^15.3.1"
+  }
+}
